@@ -72,6 +72,27 @@ a, a:hover, a:visited, a:link {
     background: @color-bg;
     padding-left: 10px;
   }
+
+  #jenkins-head-icon {
+    position: relative;
+  }
+
+  #jenkins-name-icon {
+    display: none;
+  }
+
+  #jenkins-home-link::after {
+    content: 'Jenkins Web';
+    color: white;
+    font-size: 1.5em;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+
+    margin-left: 2em;
+  }
 }
 
 #breadcrumbBar {
